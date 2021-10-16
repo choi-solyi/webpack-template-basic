@@ -2,16 +2,20 @@ const path = require('path')
 const HtmlPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 
+
 /// export -> module.exports
 module.exports ={
+    
+    mode: 'development',
+    
     //parcel index.html 같은
     //파일 읽어들이기 시작하는 진입점 설정
     entry: './js/main.js',   
-
+    
     //결과물(번들)을 반환하는 설정
     output: {
-        // path: path.resolve(__dirname, 'dist'), //무조건 절대경로로 명시, __dirname은 현재 프로젝트를 말함
-        // filename:'main.js',
+        path: path.resolve(__dirname, 'dist'), //무조건 절대경로로 명시, __dirname은 현재 프로젝트를 말함
+        filename:'main.js',
         clean: true  //변경전 기존 내용 삭제함
     },
     module:{
@@ -31,8 +35,7 @@ module.exports ={
                     'babel-loader'
                 ]
             }
-        ],
-        
+        ]
     },
     plugins:[
         new HtmlPlugin({

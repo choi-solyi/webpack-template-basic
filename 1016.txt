@@ -47,3 +47,11 @@ module.exports = {
 @ Netlify 배포
 차이점 약간다름
 
+build command -> npm run build
+publish directory -> dist/
+
+
+babel 관련 오류가 발생하여 서버 배포에 실패했다.
+참고site : https://github.com/babel/babel/issues/8599
+npm install --save-dev babel-loader@7 babel-core babel-preset-env webpack webpack-cli -D
+https://www.inflearn.com/questions/31941
