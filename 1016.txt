@@ -55,3 +55,10 @@ babel 관련 오류가 발생하여 서버 배포에 실패했다.
 참고site : https://github.com/babel/babel/issues/8599
 npm install --save-dev babel-loader@7 babel-core babel-preset-env webpack webpack-cli -D
 https://www.inflearn.com/questions/31941
+
+
+scripts build webpack mode production
+
+https://wotres.tistory.com/entry/webpack-error-%ED%95%B4%EA%B2%B0%EB%B2%95-WARNING-in-configurationThe-mode-option-has-not-been-set-webpack-will-fallback-to-production-for-this-value-Set-mode-option-to-development-or-production-to-enable-defaults-for-each-environment
+
+https://a-tothe-z.tistory.com/9
